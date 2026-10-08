@@ -1,0 +1,21 @@
+{
+ "format": "key-absorb-receipt-v1",
+ "at": "2026-10-08T18:27:29.104Z",
+ "source": "upload/Ynet.txt",
+ "keysMeasured": [
+  {
+   "section": "UNNAMED",
+   "role": "master-password",
+   "pubShort": "master-pw:P5KL…(0 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  }
+ ],
+ "liveCount": 0,
+ "sealed": null,
+ "secrets": "NONE — WIFs only inside the encrypted archive"
+}
