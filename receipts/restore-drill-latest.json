@@ -1,0 +1,12 @@
+{
+  "source": "sandbox-dex",
+  "instrument": "restore-drill.ts (#19)",
+  "ranAt": "2026-10-08T17:40:56Z",
+  "verdict": "PASS",
+  "exitCode": 0,
+  "rtoMs": 74,
+  "snapshotHeight": null,
+  "snapshotAgeSec": null,
+  "tailOpsAtRisk": null,
+  "note": "daily restore rehearsal — proves the sandbox engine can be rebuilt from git+db alone; verdict FAIL is published honestly"
+}
