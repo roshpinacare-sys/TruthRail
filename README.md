@@ -65,6 +65,19 @@ censored** (`0x02648a90…4f01bf [מצונזר-אופסק]`) — they are *not n
 (the block-scanning method reconstructs them from public data). Roots, block numbers and
 heights are the public commitments and are published as-is.
 
+## Status (2026-10-08, Task 21 — measured, not claimed)
+
+- **Dual-rail heartbeat ALIVE**: ZERO anchors hourly FREE (cp#1535/1536/1537 proven on-chain,
+  gas 0x0, cost 0.000000) + Steem/Hive line broadcast live again after the Actions secret was
+  refreshed with a chain-verified fleet key (10/10 soldiers verified against live authorities).
+- **Cadence anti-starvation (R251)**: GitHub silently dropped 7 hourly schedule firings on
+  2026-10-08 (last 06:27Z, nothing until 13:50Z). The Domain workflow now self-recalls the next
+  :33 cycle — the cadence no longer depends on the scheduler. Public minutes = free forever.
+- **Key-split honesty**: the R245-ROT2 vault rotation (2026-10-07 19:08Z) was never broadcast to
+  the chain (0/11 vault keys match live authorities); the LIVE pre-rotation keys verified 10/10.
+  headcorner's own STEEM keys exist in no cloud vault (0/4 across all generations) — operator/
+  twin custody only, recorded as an honest QUEUE, not hidden.
+
 ## Laws encoded here
 
 1. **Fail-closed** — every gate that cannot pass produces `RED` + exit 1. A skipped check is
