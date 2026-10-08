@@ -1,0 +1,36 @@
+{
+  "format": "zero-rail-live-verify-v1",
+  "at": "2026-10-08T06:52:00.957Z",
+  "rpc": "https://rpc.zero.tech",
+  "keyless": true,
+  "broadcast": false,
+  "gates": [
+    {
+      "id": "G1",
+      "name": "chainId-is-zero-network",
+      "verdict": "PASS",
+      "measured": "0x2499",
+      "note": "9369 decimal"
+    },
+    {
+      "id": "G2",
+      "name": "gas-price-is-0x0",
+      "verdict": "PASS",
+      "measured": "0x0",
+      "note": "rail is fully zero-gas, cost of anchoring $0.00"
+    },
+    {
+      "id": "G3",
+      "name": "chain-alive-advancing",
+      "verdict": "PASS",
+      "measured": {
+        "blockT0": 36595089,
+        "blockT4s": 36595100,
+        "delta": 11
+      },
+      "note": "chain producing blocks during measurement"
+    }
+  ],
+  "txReadback": [],
+  "verdict": "GREEN"
+}

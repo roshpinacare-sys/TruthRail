@@ -1,0 +1,7 @@
+# Private repo clones — never published
+repos/
+# Secrets — never, ever
+*.env
+*.rar
+# Local-only scratch
+*.log

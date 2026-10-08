@@ -1,0 +1,21 @@
+{
+  "format": "artifact-readback-v1",
+  "at": "2026-10-08T05:26:49.175Z",
+  "chain": "ethereum-mainnet",
+  "rpc": "https://ethereum-rpc.publicnode.com",
+  "claimed": {
+    "block": 25958268,
+    "rootPrefix": "8f513865",
+    "heartbeat": 25
+  },
+  "keyless": true,
+  "broadcast": false,
+  "findings": [],
+  "verdict": "NOT-FOUND",
+  "blockMeasured": {
+    "number": 25958268,
+    "timestamp": "2026-09-12T02:13:23.000Z",
+    "txCount": 186
+  },
+  "match": null
+}

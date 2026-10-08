@@ -1,0 +1,49 @@
+{
+  "format": "artifact-readback-v1",
+  "at": "2026-10-08T06:52:07.269Z",
+  "chain": "ethereum-mainnet",
+  "rpc": "https://ethereum-rpc.publicnode.com",
+  "claimed": {
+    "block": 25958483,
+    "rootPrefix": "fe1679aa",
+    "heartbeat": 26
+  },
+  "keyless": true,
+  "broadcast": false,
+  "findings": [
+    {
+      "txid": "0x87c490ae…34722b [מצונזר-אופסק]",
+      "root": "0xfe1679aa4e6dd660b6d94c5900256f751c4cdc322541ce5c04ed94963e365a14",
+      "height": 26,
+      "rootPrefixMatch": true,
+      "heightMatch": true,
+      "inputBytes": 36,
+      "status": "0x1",
+      "blockNumber": 25958483,
+      "gasUsed": 22320,
+      "effectiveGasPriceWei": 50864882,
+      "costETH": 0.00000113530416624,
+      "selfAddressed": true
+    }
+  ],
+  "verdict": "GREEN",
+  "blockMeasured": {
+    "number": 25958483,
+    "timestamp": "2026-09-12T02:56:35.000Z",
+    "txCount": 206
+  },
+  "match": {
+    "txid": "0x87c490ae…34722b [מצונזר-אופסק]",
+    "root": "0xfe1679aa4e6dd660b6d94c5900256f751c4cdc322541ce5c04ed94963e365a14",
+    "height": 26,
+    "rootPrefixMatch": true,
+    "heightMatch": true,
+    "inputBytes": 36,
+    "status": "0x1",
+    "blockNumber": 25958483,
+    "gasUsed": 22320,
+    "effectiveGasPriceWei": 50864882,
+    "costETH": 0.00000113530416624,
+    "selfAddressed": true
+  }
+}
