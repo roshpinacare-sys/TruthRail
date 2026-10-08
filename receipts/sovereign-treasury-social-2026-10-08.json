@@ -1,0 +1,203 @@
+{
+ "at": "2026-10-08T16:40:33.467Z",
+ "rows": [
+  {
+   "user": "headcorner",
+   "steem": {
+    "steem": "0.619 STEEM",
+    "sbd": "0.716 SBD",
+    "vest": "6489137.450674 VESTS"
+   },
+   "hive": {
+    "hive": "0.034 HIVE",
+    "hbd": "0.003 HBD",
+    "hp": "34718.849155 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "hcsoldier4",
+   "steem": {
+    "steem": "1.000 STEEM",
+    "sbd": "0.000 SBD",
+    "vest": "0.000000 VESTS"
+   },
+   "hive": null,
+   "blurt": null
+  },
+  {
+   "user": "hcsoldier5",
+   "steem": {
+    "steem": "0.200 STEEM",
+    "sbd": "0.080 SBD",
+    "vest": "0.000000 VESTS"
+   },
+   "hive": null,
+   "blurt": null
+  },
+  {
+   "user": "hcsoldier6",
+   "steem": {
+    "steem": "1.000 STEEM",
+    "sbd": "0.000 SBD",
+    "vest": "0.000000 VESTS"
+   },
+   "hive": null,
+   "blurt": null
+  },
+  {
+   "user": "cashmachine",
+   "steem": {
+    "steem": "0.010 STEEM",
+    "sbd": "0.125 SBD",
+    "vest": "8490.532515 VESTS"
+   },
+   "hive": {
+    "hive": "0.001 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "3421.964041 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "haran",
+   "steem": {
+    "steem": "0.010 STEEM",
+    "sbd": "0.120 SBD",
+    "vest": "383425.583801 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "244.537626 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "israelnews",
+   "steem": {
+    "steem": "0.012 STEEM",
+    "sbd": "0.120 SBD",
+    "vest": "206.197460 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "206.197460 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "lsa",
+   "steem": {
+    "steem": "0.010 STEEM",
+    "sbd": "0.120 SBD",
+    "vest": "7657.770902 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "3626.995576 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "macrame",
+   "steem": {
+    "steem": "0.010 STEEM",
+    "sbd": "0.120 SBD",
+    "vest": "3280.291580 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "2156.959384 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "siq",
+   "steem": {
+    "steem": "0.010 STEEM",
+    "sbd": "0.120 SBD",
+    "vest": "7569.028612 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "3431.136504 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "tov",
+   "steem": {
+    "steem": "0.209 STEEM",
+    "sbd": "0.145 SBD",
+    "vest": "7532.550637 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "4497.933657 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "wic",
+   "steem": {
+    "steem": "0.010 STEEM",
+    "sbd": "0.100 SBD",
+    "vest": "4055.574964 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "1065.011187 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "wog",
+   "steem": {
+    "steem": "0.010 STEEM",
+    "sbd": "0.100 SBD",
+    "vest": "7574.422603 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "1252.614307 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "woq",
+   "steem": {
+    "steem": "0.010 STEEM",
+    "sbd": "0.100 SBD",
+    "vest": "2608.868412 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "252.454809 VESTS"
+   },
+   "blurt": null
+  },
+  {
+   "user": "ynet",
+   "steem": {
+    "steem": "0.060 STEEM",
+    "sbd": "0.041 SBD",
+    "vest": "4507.359356 VESTS"
+   },
+   "hive": {
+    "hive": "0.000 HIVE",
+    "hbd": "0.000 HBD",
+    "hp": "2521.438594 VESTS"
+   },
+   "blurt": null
+  }
+ ]
+}
