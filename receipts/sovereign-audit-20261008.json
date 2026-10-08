@@ -1,0 +1,16 @@
+{
+ "format": "sovereign-audit-receipt-1",
+ "at": "2026-10-08T19:35:00Z",
+ "scope": "all 22 org repos — working-tree secret scan (working clones post-bootstrap)",
+ "sovereignKeyring": "fleet-vault@4e8a677 — identity/pat.env + MANIFEST(22) + bootstrap.sh + custody-probe + verify.sh + chain-pin copy",
+ "freshAgentProof": "fresh machine (env -i, empty HOME): clone fleet-vault → bootstrap → 22/22 repos, office unsealed, chain vault pin-match, custody 26 live keys/35 slots of 64 WIFs, heartbeat receipt pushed, temps shredded; verify.sh 9 green/0 red",
+ "secretsScan": {
+  "remediated": "SovereignConsole: committed fleet PAT (upload/pat.env ×4 vars, LIVE, same token as keyring) removed @15f4a57; PAT redacted in 3 state.json; dead-GEN2 headcorner key file removed",
+  "deadMaterialPrivateOnly": "lab WIFs in SovereignConsole/Zip scripts = GEN-2, measured DEAD on steem+hive+blurt",
+  "falsePositives": "design templates (base64 CSS), foundry/jummper (scanner-test fixtures)",
+  "publicRepos": "6 public repos re-verified clean (tree); pat.env never committed publicly",
+  "symlinkFixes": "FleetHQ foreman/data @aa47d16; SovereignConsole 23 links → real content @4151c75; Zip r208r fixture @dd10f5d6"
+ },
+ "recommendation": "operator-side rotation of the fleet PAT is optional (token lives in private keyring by design); v2 upgrade path: GitHub App with rotating installation tokens",
+ "secrets": "NONE in this receipt"
+}
