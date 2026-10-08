@@ -1,0 +1,69 @@
+{
+ "at": "2026-10-08T17:23:22.655Z",
+ "chain": "blurt",
+ "judge": "on-chain",
+ "fullGEN2": 10,
+ "total": 10,
+ "rows": [
+  {
+   "account": "cashmachine",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "haran",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "israelnews",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "lsa",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "macrame",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "siq",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "tov",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "wic",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "wog",
+   "active": true,
+   "posting": true,
+   "memo": true
+  },
+  {
+   "account": "woq",
+   "active": true,
+   "posting": true,
+   "memo": true
+  }
+ ]
+}

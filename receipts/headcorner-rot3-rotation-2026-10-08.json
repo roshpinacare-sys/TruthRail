@@ -1,0 +1,17 @@
+{
+ "format": "headcorner-rot3-receipt-v1",
+ "at": "2026-10-08T17:25:30.236Z",
+ "account": "headcorner",
+ "chain": "steem",
+ "scheme": "sha256(account + '/' + role + '/' + rot3Seed)",
+ "rotation": "ROT3",
+ "reason": "GEN-2 censor-leak remediation (chat-log confession Task 24); leaked WIFs invalidated by owner-signed account_update",
+ "txid": "8edc45ed502c9a6c",
+ "pubFingerprints": {
+  "owner": "STM5Ao2voW\u2026rSQFJ7",
+  "active": "STM5jRfQH9\u2026NSXDQf",
+  "posting": "STM7RqZtbL\u2026h7QjY3",
+  "memo": "STM6uwJR2s\u20269x14uu"
+ },
+ "secrets": "NONE \u2014 seed+WIFs sealed in git vault KEYS-ZIP-2026-10-08-ROT3.zip.enc"
+}
