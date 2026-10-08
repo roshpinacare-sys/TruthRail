@@ -1,8 +1,8 @@
 {
   "source": "sandbox-dex",
   "state": "engine-live",
-  "height": 172735,
-  "stateSavedAt": "2026-10-08T17:08:16.820Z",
-  "witnessedAt": "2026-10-08T17:09:31Z",
+  "height": 173135,
+  "stateSavedAt": "2026-10-08T17:29:24.220Z",
+  "witnessedAt": "2026-10-08T17:29:33Z",
   "note": "sandbox engine live witness — age of witnessedAt IS the health signal; no agent claims needed"
 }
