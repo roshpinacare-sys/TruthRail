@@ -1,0 +1,168 @@
+{
+ "format": "key-absorb-receipt-v1",
+ "at": "2026-10-08T18:27:39.192Z",
+ "source": "upload/הד.txt",
+ "keysMeasured": [
+  {
+   "section": "HEADCORNER",
+   "role": "master-password",
+   "pubShort": "master-pw:P5KQ…(0 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "TOV",
+   "role": "master-password",
+   "pubShort": "master-pw:P5Hw…(4 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:tov.owner|tov.active|tov.posting|tov.memo",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "TOV",
+   "role": "master-password",
+   "pubShort": "master-pw:P5JM…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:macrame.owner|macrame.active|macrame.posting|macrame.memo",
+    "hive": "LIVE:macrame.owner|macrame.active|macrame.posting|macrame.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "ISRAELNEWS",
+   "role": "master-password",
+   "pubShort": "master-pw:P5JX…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:israelnews.owner|israelnews.active|israelnews.posting|israelnews.memo",
+    "hive": "LIVE:israelnews.owner|israelnews.active|israelnews.posting|israelnews.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "ISRAELNEWS",
+   "role": "master-password",
+   "pubShort": "master-pw:P5KL…(0 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "ליינט",
+   "role": "master-password",
+   "pubShort": "master-pw:P5Jg…(0 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5J9…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:haran.owner|haran.active|haran.posting|haran.memo",
+    "hive": "LIVE:haran.owner|haran.active|haran.posting|haran.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5Jc…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:cashmachine.owner|cashmachine.active|cashmachine.posting|cashmachine.memo",
+    "hive": "LIVE:cashmachine.owner|cashmachine.active|cashmachine.posting|cashmachine.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5KK…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:wog.owner|wog.active|wog.posting|wog.memo",
+    "hive": "LIVE:wog.owner|wog.active|wog.posting|wog.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5KG…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:wic.owner|wic.active|wic.posting|wic.memo",
+    "hive": "LIVE:wic.owner|wic.active|wic.posting|wic.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5Hw…(4 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:tov.owner|tov.active|tov.posting|tov.memo",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5Hw…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:lsa.owner|lsa.active|lsa.posting|lsa.memo",
+    "hive": "LIVE:lsa.owner|lsa.active|lsa.posting|lsa.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5Jn…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:siq.owner|siq.active|siq.posting|siq.memo",
+    "hive": "LIVE:siq.owner|siq.active|siq.posting|siq.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5J2…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:woq.owner|woq.active|woq.posting|woq.memo",
+    "hive": "LIVE:woq.owner|woq.active|woq.posting|woq.memo"
+   },
+   "anyLive": true
+  }
+ ],
+ "liveCount": 11,
+ "sealed": {
+  "archive": "agent/vault/ABSORB-2026-10-08T18-27-38.zip.enc",
+  "sha256": "c4a85bb075b098563986973c2a632f257b6a22181eab64906e36c5025de61ee4",
+  "sealedAt": "2026-10-08T18:27:39.188Z"
+ },
+ "secrets": "NONE — WIFs only inside the encrypted archive"
+}
