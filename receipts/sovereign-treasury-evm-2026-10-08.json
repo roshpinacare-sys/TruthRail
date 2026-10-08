@@ -1,0 +1,113 @@
+{
+ "at": "2026-10-08T16:39:56.446Z",
+ "rows": [
+  {
+   "agent": "cashmachine",
+   "addr": "0x0fb6c1807d8d7945b5e3a14ea3679e19795cb545",
+   "ethereum": 3.6743551308e-7,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "haran",
+   "addr": "0xdb073ae7de5fd56e635c1aad97599892b3288c42",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "headcorner",
+   "addr": "0x2767e8146c11bad1d9b0784f11325375195c1b0f",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "israelnews",
+   "addr": "0x4702ed075a368023a26bdc651d0ec282c8aa4e84",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "lsa",
+   "addr": "0x505bbaa179827a1759b2875d50806eb7933e9add",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "macrame",
+   "addr": "0x174465ded517d129cc6b7424671da8c181413a55",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "siq",
+   "addr": "0xc2bf134836c93a1b88da025639609882cb67368b",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "tov",
+   "addr": "0x0ebb322ce1e54738ccad27f524754ad859677360",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "wic",
+   "addr": "0x004085135371bd271345dab84bc8be8b677d1733",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "wog",
+   "addr": "0x9b47db08fc1bc552856a69872d0a15486447c5cb",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "woq",
+   "addr": "0x9978ab0f642bbf0b75e92db0e639ee863e053ac4",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  },
+  {
+   "agent": "ynet",
+   "addr": "0xd1e528b99632da73de8bb494b76644273c9433b8",
+   "ethereum": 0,
+   "bsc": 0,
+   "polygon": 0,
+   "base": 0,
+   "zero": 0
+  }
+ ]
+}
