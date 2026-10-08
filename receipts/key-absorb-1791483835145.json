@@ -1,0 +1,98 @@
+{
+ "format": "key-absorb-receipt-v1",
+ "at": "2026-10-08T18:23:55.145Z",
+ "source": "upload/הדקור-test.txt",
+ "keysMeasured": [
+  {
+   "section": "HEADCONER-STEEMIT",
+   "role": "owner",
+   "pubShort": "STM82UYxfYEj…",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "HEADCONER-STEEMIT",
+   "role": "active",
+   "pubShort": "STM6awWiaDew…",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "HEADCONER-STEEMIT",
+   "role": "posting",
+   "pubShort": "STM8dccB869f…",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "HEADCONER-STEEMIT",
+   "role": "memo",
+   "pubShort": "STM5YvocccHk…",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "HIVE",
+   "role": "owner",
+   "pubShort": "STM7wrjtKqzY…",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "HIVE",
+   "role": "active",
+   "pubShort": "STM5ZZGDCCBh…",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "HIVE",
+   "role": "posting",
+   "pubShort": "STM7UfQzF6CA…",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "HIVE",
+   "role": "memo",
+   "pubShort": "STM6HZeRBueK…",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  }
+ ],
+ "liveCount": 0,
+ "sealed": null,
+ "secrets": "NONE — WIFs only inside the encrypted archive"
+}
