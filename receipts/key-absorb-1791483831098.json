@@ -1,0 +1,58 @@
+{
+ "format": "key-absorb-receipt-v1",
+ "at": "2026-10-08T18:23:51.098Z",
+ "source": "upload/הד.txt",
+ "keysMeasured": [
+  {
+   "section": "P5JXWNLCSZTHCING1PRHGHQYNKY2DRQWL1DATB3R4JMEW8UFTABV",
+   "role": "master-password",
+   "pubShort": "master-pw:P5KL…(0 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "ליינט",
+   "role": "master-password",
+   "pubShort": "master-pw:P5Jg…(0 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "UNREFERENCED",
+    "hive": "UNREFERENCED"
+   },
+   "anyLive": false
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5J9…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:haran.owner|haran.active|haran.posting|haran.memo",
+    "hive": "LIVE:haran.owner|haran.active|haran.posting|haran.memo"
+   },
+   "anyLive": true
+  },
+  {
+   "section": "לא-ברור",
+   "role": "master-password",
+   "pubShort": "master-pw:P5Jc…(8 slots)",
+   "err": null,
+   "verdicts": {
+    "steem": "LIVE:cashmachine.owner|cashmachine.active|cashmachine.posting|cashmachine.memo",
+    "hive": "LIVE:cashmachine.owner|cashmachine.active|cashmachine.posting|cashmachine.memo"
+   },
+   "anyLive": true
+  }
+ ],
+ "liveCount": 2,
+ "sealed": {
+  "archive": "agent/vault/ABSORB-2026-10-08T18-23-50.zip.enc",
+  "sha256": "0ab517930f189028ffa63e4a9f6d27b54753b1dad350d3285f2ca9f132dbe19b",
+  "sealedAt": "2026-10-08T18:23:51.094Z"
+ },
+ "secrets": "NONE — WIFs only inside the encrypted archive"
+}
