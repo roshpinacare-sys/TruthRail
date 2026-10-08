@@ -1,0 +1,75 @@
+{
+  "tool": "heartbeat-scan",
+  "at": "2026-10-08T14:28:55.785Z",
+  "rpcs": [
+    "https://eth.llamarpc.com",
+    "https://eth.drpc.org",
+    "https://cloudflare-eth.com",
+    "https://rpc.ankr.com/eth"
+  ],
+  "baseline": {
+    "block": 25958483,
+    "height": 26
+  },
+  "scan": {
+    "scanBack": 300,
+    "thresholdHours": 48
+  },
+  "measured": {
+    "head": 26148281,
+    "identity": "0x0fb6c180…5cb545 [מצונזר-אופסק]",
+    "nonceAtBaseline": 68,
+    "nonceNow": 68,
+    "newTxsSinceBaseline": 0,
+    "balanceEth": 3.6743551308e-7,
+    "baselineAgeHours": 635.54,
+    "anchorsFound": [],
+    "latestAnchor": null
+  },
+  "gates": [
+    {
+      "id": "G0",
+      "name": "baseline-derivation",
+      "verdict": "PASS",
+      "measured": {
+        "identity": "0x0fb6c180…5cb545 [מצונזר-אופסק]",
+        "derivedRoot": "0xfe1679aa4e6dd660b6d94c5900256f751c4cdc322541ce5c04ed94963e365a14"
+      },
+      "note": "זהות-העיגון נגזרה מסריקת-בלוק ציבורי (self-tx · height תואם) — אפס-txid נטמן"
+    },
+    {
+      "id": "G1",
+      "name": "baseline-age",
+      "verdict": "FAIL",
+      "measured": {
+        "ageHours": 635.54,
+        "thresholdHours": 48
+      },
+      "note": "העוגן-האחרון בן 635.54ש' — מעבר לסף"
+    },
+    {
+      "id": "G2",
+      "name": "rail-liveness",
+      "verdict": "FAIL",
+      "measured": {
+        "newTxsSinceBaseline": 0,
+        "balanceEth": 3.6743551308e-7,
+        "starved": true
+      },
+      "note": "אפס-טקסים מאז-הבסל + יתרה 3.67e-7 ETH — המסילה מורעבת (לא מתה-מבחירה)"
+    },
+    {
+      "id": "G3",
+      "name": "anchor-discovery",
+      "verdict": "PASS",
+      "measured": {
+        "scannedBack": 300,
+        "found": 0,
+        "expected": 0
+      },
+      "note": "אין-טקסים-חדשים — אין-מה לגלות (כנות)"
+    }
+  ],
+  "verdict": "RED",
+  "note": "הלב עצור 635.54ש' (סף 48ש') · יתרת-זהות 3.67e-7 ETH — הוכחת-רעב · חוק-פיצול-המטבע: הזרמת-גז = המפעיל (QUEUE)"
+}

@@ -1,0 +1,74 @@
+{
+  "tool": "zero-heartbeat",
+  "rail": "zero-9369",
+  "mode": "block-scan-free-heartbeat",
+  "at": "2026-10-08T14:29:19.080Z",
+  "claim": {
+    "block": 36619663,
+    "checkpoint": 1541,
+    "rootPrefix": "54aea8d4…"
+  },
+  "measured": {
+    "head": 36620714,
+    "ageHours": 0.31,
+    "anchor": {
+      "checkpoint": 1541,
+      "root": "0x54aea8d4a3cf6af4178995a5233b1c6f5ed46c4651e62a5dd9c85e424f790789",
+      "attFrom": 1599,
+      "attTo": 1599,
+      "attestations": 1599,
+      "net": "weave-core",
+      "identity": "0xe376d843… [מצונזר-אופסק]",
+      "txid": "0x4d7d1548… [מצונזר-אופסק]"
+    },
+    "effectiveGasPrice": "0x0"
+  },
+  "gates": [
+    {
+      "id": "Z1",
+      "name": "block-age",
+      "verdict": "PASS",
+      "measured": {
+        "ageHours": 0.31,
+        "thresholdHours": 3
+      },
+      "note": "העוגן-החינמי טרי"
+    },
+    {
+      "id": "Z2",
+      "name": "anchor-discovery",
+      "verdict": "PASS",
+      "measured": {
+        "block": 36619663,
+        "selector": "0xa9059cbb",
+        "selfTx": true
+      },
+      "note": "self-עוגן-checkpoint אותר בסריקת-הבלוק (אפס-txid-מוטמע)"
+    },
+    {
+      "id": "Z3",
+      "name": "claim-match",
+      "verdict": "PASS",
+      "measured": {
+        "cpClaimed": 1541,
+        "cpFound": 1541,
+        "rootPrefixClaimed": "54aea8d4",
+        "rootMatch": true
+      },
+      "note": "המטען על-השרשרת תואם-את-הטענה-הציבורית"
+    },
+    {
+      "id": "Z4",
+      "name": "inclusion-and-zero-gas",
+      "verdict": "PASS",
+      "measured": {
+        "status": "0x1",
+        "effectiveGasPrice": "0x0",
+        "gasUsed": "0x94e8"
+      },
+      "note": "העוגן נכלל (status 1) בגז 0x0 — העלות 0.000000"
+    }
+  ],
+  "verdict": "GREEN",
+  "note": "הלב פועם חינם על ZERO: cp#1541 מאומת מסריקת-בלוק · גיל 0.31ש' · גז 0x0 · עלות 0.000000"
+}

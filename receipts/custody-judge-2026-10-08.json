@@ -1,0 +1,277 @@
+{
+ "format": "custody-judge-matrix-v1",
+ "at": "2026-10-08T14:47:05.000Z",
+ "chainJudge": true,
+ "note": "השרשרת היא השופט היחיד — נגזר מהכספת KEYS-ZIP-2026-10-08 (sha-פין ב-recovery-meta), נרמול-WIF-כפול (T-86: דחוס 38B + לא-דחוס 37B), מול הסמכויות-החיות של שלוש השרשראות. אפס-סוד-בקובץ: MATCH/mismatch-בלבד.",
+ "vault": {
+  "file": "agent/vault/KEYS-ZIP-2026-10-08.zip.enc @ roshpinacare-sys/steem@saos-cockpit",
+  "format": "saos-vault-1",
+  "rotation": "R245-ROT2 (ownerKeys UNCHANGED — never broadcast; active/posting/memo = rot2Seed-derived)",
+  "accounts": 14
+ },
+ "methodNotes": [
+  "מעבר-ראשון (ספריית-steem גולמית): הספרייה מפענחת רק WIF-לא-דחוס (51) — K/L-דחוס (52) נפלו-בטעות-ל-mismatch. תוקן בנרמול-T-86.",
+  "הנרמול: base58 → בדיקת-checksum-כפול → השלכת-דגל-דחיסה (0x01) → WIF-לא-דחוס → נגזרת-מנוקדת-דחוסה (הפורמט-של-השרשרת)."
+ ],
+ "verdict": {
+  "match": 45,
+  "checked": 144,
+  "headcornerSteem": "4/4 LIVE (owner/active/posting/memo) — GEN-2 crown chain-proven",
+  "hcsoldier456Steem": "4/4 LIVE ×3",
+  "army": "owner LIVE בשלוש-השרשראות (cashmachine..woq) · active/posting החי = GEN-1 דרך-סודות-Actions (הקצב משדר — txids אומתו-עצמאית)",
+  "blurt": "אין-מפתח-מוחזק-מתאים-לסמכויות-active/posting החיות — בעלות-owner בלבד; סבב-סמכויות = החלטת-מפעיל (R255)",
+  "headcornerHive": "0/4 — מפתח-ה-Hive החי אצל-המפעיל (לוויתן-42.8B-RC)"
+ },
+ "matrix": {
+  "headcorner": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "MATCH",
+    "posting": "MATCH",
+    "memo": "MATCH"
+   },
+   "hive": {
+    "owner": "mismatch",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "mismatch",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "cashmachine": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "haran": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "israelnews": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "lsa": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "macrame": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "siq": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "tov": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "mismatch",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "wic": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "wog": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "woq": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "hive": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   },
+   "blurt": {
+    "owner": "MATCH",
+    "active": "mismatch",
+    "posting": "mismatch",
+    "memo": "mismatch"
+   }
+  },
+  "hcsoldier4": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "MATCH",
+    "posting": "MATCH",
+    "memo": "MATCH"
+   },
+   "hive": "NO-CHAIN-ACCT",
+   "blurt": "NO-CHAIN-ACCT"
+  },
+  "hcsoldier5": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "MATCH",
+    "posting": "MATCH",
+    "memo": "MATCH"
+   },
+   "hive": "NO-CHAIN-ACCT",
+   "blurt": "NO-CHAIN-ACCT"
+  },
+  "hcsoldier6": {
+   "steem": {
+    "owner": "MATCH",
+    "active": "MATCH",
+    "posting": "MATCH",
+    "memo": "MATCH"
+   },
+   "hive": "NO-CHAIN-ACCT",
+   "blurt": "NO-CHAIN-ACCT"
+  }
+ }
+}

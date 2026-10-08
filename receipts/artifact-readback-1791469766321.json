@@ -1,0 +1,16 @@
+{
+  "format": "artifact-readback-v1",
+  "at": "2026-10-08T14:29:26.321Z",
+  "chain": "ethereum-mainnet",
+  "rpc": "https://ethereum-rpc.publicnode.com",
+  "claimed": {
+    "block": 0,
+    "rootPrefix": "",
+    "heartbeat": -1
+  },
+  "keyless": true,
+  "broadcast": false,
+  "findings": [],
+  "verdict": "RED",
+  "fatal": "missing --block or --root-prefix; refusing to guess (fail-closed)"
+}

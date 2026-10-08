@@ -1,0 +1,28 @@
+{
+  "tool": "zero-heartbeat",
+  "rail": "zero-9369",
+  "mode": "block-scan-free-heartbeat",
+  "at": "2026-10-08T14:28:57.685Z",
+  "claim": {
+    "block": 0,
+    "checkpoint": 0,
+    "rootPrefix": "…"
+  },
+  "measured": {
+    "head": null,
+    "ageHours": null,
+    "anchor": null,
+    "effectiveGasPrice": null
+  },
+  "gates": [
+    {
+      "id": "Z0",
+      "name": "args",
+      "verdict": "FAIL",
+      "measured": null,
+      "note": "נדרש: --block --checkpoint --root (קידומת)"
+    }
+  ],
+  "verdict": "RED",
+  "note": "המסילה-החינמית לא עברה-אימות — RED כן (הקצב-השעתי נעתק או-הטענה-שגויה)"
+}
