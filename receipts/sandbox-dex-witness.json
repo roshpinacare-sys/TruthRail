@@ -3,9 +3,9 @@
   "state": "state-live-port-down",
   "height": 185919,
   "stateRoot": "null",
-  "seq": 84,
-  "prevHash": "284bc5e5b3ef7c2fec2ff0cc3f4aba6abb184c3dff15d9e0faf4e297c4891bed",
+  "seq": 85,
+  "prevHash": "9235fe8d895bd4ea210f2e61394c56696b5ce9d452d5d4127197f8c278b90af2",
   "stateSavedAt": "2026-10-09T04:18:31.184Z",
-  "witnessedAt": "2026-10-10T05:48:35Z",
+  "witnessedAt": "2026-10-10T06:08:38Z",
   "note": "sandbox engine live witness — age of witnessedAt IS the health signal; hash-chain: each witness commits sha256 of the previous committed witness file (verify: scripts/verify-witness-chain.sh) — any deletion/tamper of history breaks the chain visibly"
 }
