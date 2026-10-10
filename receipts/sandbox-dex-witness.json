@@ -3,9 +3,9 @@
   "state": "engine-live",
   "height": 185919,
   "stateRoot": "90d47e227acf4e616e9e4b928a83f0fd8aff1d3f94f3e0b8e39623c01a6f204f",
-  "seq": 67,
-  "prevHash": "c218ec7fdf798eb85dc0507f39e4a6b36f283d33badc795f468b50127f0bf635",
+  "seq": 68,
+  "prevHash": "bd32fef99e09d981d818282451a6681cf06c017a917f63847973a43b5a6f51a2",
   "stateSavedAt": "2026-10-09T04:18:31.184Z",
-  "witnessedAt": "2026-10-10T00:07:48Z",
+  "witnessedAt": "2026-10-10T00:27:51Z",
   "note": "sandbox engine live witness — age of witnessedAt IS the health signal; hash-chain: each witness commits sha256 of the previous committed witness file (verify: scripts/verify-witness-chain.sh) — any deletion/tamper of history breaks the chain visibly"
 }
