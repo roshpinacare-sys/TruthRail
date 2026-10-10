@@ -1,11 +1,11 @@
 {
   "source": "sandbox-dex",
   "state": "engine-live",
-  "height": 6769,
-  "stateRoot": "1c193def5d0df08a6c66eef345c85ca3dfda1337d98fc52978431781d35dafba",
-  "seq": 103,
-  "prevHash": "9a27942000db1d8b8acd5fdc29e2762e94cae60a826566608e576e780153d8be",
-  "stateSavedAt": "2026-10-10T12:08:54.142Z",
-  "witnessedAt": "2026-10-10T12:09:27Z",
+  "height": 7169,
+  "stateRoot": "null",
+  "seq": 104,
+  "prevHash": "b61eacfc687783270af7f5231c2efe4fe251580fdf38879c90c80b7ec6569c72",
+  "stateSavedAt": "2026-10-10T12:28:54.569Z",
+  "witnessedAt": "2026-10-10T12:29:30Z",
   "note": "sandbox engine live witness — age of witnessedAt IS the health signal; hash-chain: each witness commits sha256 of the previous committed witness file (verify: scripts/verify-witness-chain.sh) — any deletion/tamper of history breaks the chain visibly"
 }
