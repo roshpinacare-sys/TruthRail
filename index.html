@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TruthRail · עמוד-האמת הציבורי</title>
+<style>
+  :root{ --bg:#0b0f0d; --panel:#121916; --line:#223029; --tx:#e7efe9; --dim:#9db3a7;
+         --ok:#34d399; --warn:#fbbf24; --bad:#f87171; --unk:#9db3a7; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+       font-family:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+       min-height:100vh;display:flex;flex-direction:column}
+  main{flex:1;width:100%;max-width:980px;margin:0 auto;padding:24px 16px 40px}
+  header h1{font-size:1.45rem;margin:0 0 4px}
+  header p{margin:0;color:var(--dim);font-size:.9rem}
+  .strip{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+  .chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+        padding:4px 12px;font-size:.8rem;color:var(--dim)}
+  .chip b{color:var(--tx)}
+  .chip.fresh b{color:var(--ok)} .chip.aging b{color:var(--warn)}
+  .chip.stale b{color:var(--bad)} .chip.unknown b{color:var(--unk)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+        padding:14px 16px;margin:12px 0}
+  .card h2{font-size:.85rem;margin:0 0 8px;color:var(--dim);font-weight:600}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;direction:ltr;
+        text-align:left;font-size:.78rem;word-break:break-all;white-space:pre-wrap}
+  .root{font-size:.9rem}
+  .err{border-color:var(--bad);color:var(--bad)}
+  table{width:100%;border-collapse:collapse;font-size:.78rem}
+  th{color:var(--dim);text-align:right;font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+  td{padding:6px 8px;border-bottom:1px solid rgba(34,48,41,.5)}
+  td.sha{font-family:ui-monospace,Menlo,monospace;direction:ltr;text-align:left}
+  .wrap{max-height:340px;overflow:auto}
+  footer{border-top:1px solid var(--line);color:var(--dim);font-size:.75rem;
+         padding:14px 16px;text-align:center}
+  footer a{color:var(--tx)}
+  a{color:var(--ok)}
+  @media(max-width:480px){ .card{padding:12px} th,td{padding:5px 6px} }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>TruthRail · עמוד-האמת הציבורי</h1>
+    <p>עוגן-אמת מרקל ציבורי של קבלות-הרשת. סטטי · אפס-שרת · אפס-סודות · כל-ערך עם מקור.</p>
+  </header>
+
+  <div class="strip" id="chips">
+    <span class="chip unknown">עוגן: <b>—</b></span>
+    <span class="chip unknown">טריות: <b>לא ידוע</b></span>
+    <span class="chip unknown">ורדיקט: <b>—</b></span>
+    <span class="chip unknown">עלים: <b>—</b></span>
+  </div>
+
+  <div id="err" class="card err" hidden>העוגן לא נטען — <b>לא ידוע</b> הוא התשובה הכנה. נסו-שוב בהמשך; הדף לא ימציא ירוק.</div>
+
+  <section class="card">
+    <h2>שורש-מרקל (merkle root)</h2>
+    <div class="mono root" id="root">—</div>
+  </section>
+
+  <section class="card">
+    <h2>פרטי-עוגן (מתוך anchors/truthrail-anchor-latest.json)</h2>
+    <div id="meta" class="mono">—</div>
+  </section>
+
+  <section class="card">
+    <h2>עלים · קבלות מגובות (נתיב ← sha256)</h2>
+    <div class="wrap"><table id="leaves">
+      <thead><tr><th>נתיב</th><th>sha256</th></tr></thead>
+      <tbody><tr><td colspan="2" style="color:var(--dim)">—</td></tr></tbody>
+    </table></div>
+  </section>
+</main>
+
+<footer>
+  מקור: <a href="https://github.com/roshpinacare-sys/TruthRail" target="_blank" rel="noopener">roshpinacare-sys/TruthRail</a> ·
+  <a href="https://github.com/roshpinacare-sys/TruthRail/tree/main/receipts" target="_blank" rel="noopener">קבלות</a> ·
+  עוגן-גלם: <span class="mono">anchors/truthrail-anchor-latest.json</span><br>
+  חוק-טריות 45/90 דק · אפס-API-תלות ברינדור (raw בלבד) · נוצר exec-17 · מסלול Z · 2026-10-11 · ענף pages, main של מסילת-הקבלות לא-נגע
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var SRC = "https://raw.githubusercontent.com/roshpinacare-sys/TruthRail/main/anchors/truthrail-anchor-latest.json";
+  function el(id){ return document.getElementById(id); }
+  function txt(id, v){ el(id).textContent = (v === null || v === undefined || v === "") ? "—" : String(v); }
+  function ageMin(iso){
+    try { return Math.max(0, Math.round((Date.now() - new Date(iso).getTime()) / 60000)); }
+    catch(e){ return null; }
+  }
+  function freshness(m){
+    if (m === null) return "unknown";
+    if (m <= 45) return "fresh";
+    if (m <= 90) return "aging";
+    return "stale";
+  }
+  var LABEL = { fresh:"טרי", aging:"מתיישן", stale:"ישן", unknown:"לא ידוע" };
+  function setChip(i, cls, label, val){
+    var c = el("chips").children[i];
+    c.className = "chip " + cls;
+    c.innerHTML = label + ': <b></b>';
+    c.querySelector("b").textContent = val;
+  }
+  fetch(SRC + "?cb=" + Date.now(), { cache:"no-store" })
+    .then(function(r){ if(!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function(a){
+      el("err").hidden = true;
+      var m = ageMin(a.at), f = freshness(m);
+      setChip(0, "unknown", "עוגן", a.schema || "—");
+      setChip(1, f, "טריות", (f === "unknown") ? "לא ידוע" : (LABEL[f] + " · " + m + " דק"));
+      setChip(2, a.ok === true ? "fresh" : (a.ok === false ? "stale" : "unknown"),
+              "ורדיקט", a.ok === true ? "ok" : (a.ok === false ? "כשל" : "—"));
+      setChip(3, "unknown", "עלים", (typeof a.count === "number") ? a.count : "—");
+      txt("root", a.root);
+      var meta = [
+        ["schema", a.schema], ["at", a.at], ["ok", a.ok],
+        ["merkleRule", a.merkleRule], ["producedBy", a.producedBy],
+        ["source", a.source], ["publishedTo", a.publishedTo], ["verifyWith", a.verifyWith]
+      ].map(function(p){ return p[0] + ": " + (p[1] === undefined || p[1] === null || p[1] === "" ? "—" : p[1]); }).join("\n");
+      el("meta").textContent = meta;
+      var tb = el("leaves").querySelector("tbody");
+      tb.textContent = "";
+      var leaves = Array.isArray(a.leaves) ? a.leaves : [];
+      if (!leaves.length){
+        var tr0 = document.createElement("tr");
+        var td0 = document.createElement("td"); td0.colSpan = 2;
+        td0.style.color = "var(--dim)"; td0.textContent = "אין עלים — כנה";
+        tr0.appendChild(td0); tb.appendChild(tr0);
+      }
+      leaves.forEach(function(lf){
+        var tr = document.createElement("tr");
+        var tdP = document.createElement("td"); tdP.textContent = lf.path || "—";
+        var tdS = document.createElement("td"); tdS.className = "sha";
+        tdS.title = lf.sha256 || ""; tdS.textContent = (lf.sha256 || "—").slice(0, 18) + (lf.sha256 ? "…" : "");
+        tr.appendChild(tdP); tr.appendChild(tdS); tb.appendChild(tr);
+      });
+    })
+    .catch(function(e){
+      el("err").hidden = false;
+      setChip(1, "unknown", "טריות", "לא ידוע");
+      el("meta").textContent = "שגיאת-שליפה: " + (e && e.message ? e.message : "לא ידוע");
+    });
+})();
+</script>
+</body>
+</html>
