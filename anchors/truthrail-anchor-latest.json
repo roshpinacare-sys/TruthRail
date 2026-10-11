@@ -1,0 +1,125 @@
+{
+  "schema": "saos.jummper.truthrail-anchor/1",
+  "at": "2026-10-11T20:42:16Z",
+  "ok": true,
+  "source": "TruthRail receipts/ on public main (roshpinacare-sys)",
+  "root": "d841499f30b163ef5a87e38394607ebb546102b6a892745abed9fe41208e510b",
+  "count": 16,
+  "leaves": [
+    {
+      "path": "sandbox-dex-witness.json",
+      "sha256": "05c9fd7eca140844365c267272a07310ed5a5f43bb9739cd3fda7d252304918c"
+    },
+    {
+      "path": "sovereign-audit-20261008.json",
+      "sha256": "7278355e5061099cc7d8d278b4b3c07a5fe685bbce12943d43457d17e06f1162"
+    },
+    {
+      "path": "sovereign-evm-addresses-2026-10-08.json",
+      "sha256": "2ea1def4b91dedc6d19b886c4ebefd90cf789c3c1f0ff1f659f9f937f7871f78"
+    },
+    {
+      "path": "sovereign-treasury-evm-2026-10-08.json",
+      "sha256": "08f83f73104e706525ee74731d2283f73df19a372f4c6b5fe9e7e2ea7d7983b8"
+    },
+    {
+      "path": "sovereign-treasury-social-2026-10-08.json",
+      "sha256": "076fbe0295444a7d70ca157ecbb74080ff1ea1a9a2d7a2871ad8066740127013"
+    },
+    {
+      "path": "zero-heartbeat-1791443456837.json",
+      "sha256": "a240c53b3b3e62ba8af94c2eb54d7583119830b6ecbe3156a582b91c4fd8f0e5"
+    },
+    {
+      "path": "zero-heartbeat-1791467593732.json",
+      "sha256": "740f1e95be996e1b3450ebf9eed4da4bf7b04a4a594dda966ccf2c1d62d322df"
+    },
+    {
+      "path": "zero-heartbeat-1791467617821.json",
+      "sha256": "9d87bb5c07279ea07eab2d0b2235ee866cdf2065794dd0a6ce92e62b357714f2"
+    },
+    {
+      "path": "zero-heartbeat-1791467623898.json",
+      "sha256": "dec5932498248e281bcd0860204bbc001bcc8aa16709ef766e17a7b042e3c667"
+    },
+    {
+      "path": "zero-heartbeat-1791469737685.json",
+      "sha256": "157da24c33351b2a763eba1b8235ad3a210c8de9b02bbc92697ac5b04434f409"
+    },
+    {
+      "path": "zero-heartbeat-1791469760164.json",
+      "sha256": "d7bc46652b9d12a1dc777c8efaa415dc51e0650f0e078e4d70eaef202651058a"
+    },
+    {
+      "path": "zero-live-verify-1791436939751.json",
+      "sha256": "9606be59f9f91be61e61496c9c769efe7eb9f313145c3010e6e97e4b6243354a"
+    },
+    {
+      "path": "zero-live-verify-1791441658268.json",
+      "sha256": "7e6492606c4c944f163fa712d0f92809bfec25c09965e6a80efb0955eb3c35cf"
+    },
+    {
+      "path": "zero-live-verify-1791442327219.json",
+      "sha256": "3b19ed6ee7789a73000bdb154f07786270e65b504d1949cf634125ca9f616706"
+    },
+    {
+      "path": "zero-live-verify-1791468244354.json",
+      "sha256": "0a71a4c0e41471f07b7243f05efb8a745312cfcbee99247b0df1f561a7742966"
+    },
+    {
+      "path": "zero-live-verify-g4-cp1533.json",
+      "sha256": "04fa9c07bd44c99d1f58dcdb25901b78d19ed5a7ce43736a2c045ae85e0e563b"
+    }
+  ],
+  "proofs": [
+    {
+      "path": "sandbox-dex-witness.json",
+      "leaf": "05c9fd7eca140844365c267272a07310ed5a5f43bb9739cd3fda7d252304918c",
+      "proof": [
+        {
+          "sibling": "7278355e5061099cc7d8d278b4b3c07a5fe685bbce12943d43457d17e06f1162",
+          "dir": "right"
+        },
+        {
+          "sibling": "e3ee3732549ae06d6fe585edc97c5062fd4ee3c72559913d3dff49d3a3b10bf7",
+          "dir": "right"
+        },
+        {
+          "sibling": "208cee6f7d640f076426e34ff169deef43d811ea98939b8f401eb332576c2cb1",
+          "dir": "right"
+        },
+        {
+          "sibling": "576ecd3da6d890cb7ee0e681f2f5cd59459dad414f21da0438d0f2b2b0488d92",
+          "dir": "right"
+        }
+      ]
+    },
+    {
+      "path": "sovereign-audit-20261008.json",
+      "leaf": "7278355e5061099cc7d8d278b4b3c07a5fe685bbce12943d43457d17e06f1162",
+      "proof": [
+        {
+          "sibling": "05c9fd7eca140844365c267272a07310ed5a5f43bb9739cd3fda7d252304918c",
+          "dir": "left"
+        },
+        {
+          "sibling": "e3ee3732549ae06d6fe585edc97c5062fd4ee3c72559913d3dff49d3a3b10bf7",
+          "dir": "right"
+        },
+        {
+          "sibling": "208cee6f7d640f076426e34ff169deef43d811ea98939b8f401eb332576c2cb1",
+          "dir": "right"
+        },
+        {
+          "sibling": "576ecd3da6d890cb7ee0e681f2f5cd59459dad414f21da0438d0f2b2b0488d92",
+          "dir": "right"
+        }
+      ]
+    }
+  ],
+  "merkleRule": "sha256, odd-node duplicated (src/jumpper/merkle.py; fleet SDK port agrees)",
+  "verifyWith": "@saos/fleet-sdk verifyAnchor — Sdk repo sdk/index.js (keyless, recomputes root + proofs + bytes spot-check)",
+  "publishedTo": "TruthRail/anchors/truthrail-anchor-latest.json — the PUBLIC verification surface (the notary repo is private; keyless verification must live on the public rail)",
+  "producedBy": "revival-agent zai-code (T-58): listing via authenticated read during org unauth rate-limit; receipt bytes keyless via raw.githubusercontent; lane script scripts/truthrail_anchor.py remains 100% keyless for all future runs",
+  "external": "pending-owner-keys — crosschain.py/solana.py adapters ready; no key exists in this lane (by design)"
+}
