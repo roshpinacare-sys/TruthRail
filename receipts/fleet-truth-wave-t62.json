@@ -1,0 +1,26 @@
+{
+ "ts": "2026-10-11T23:10:20.497Z",
+ "wave": "T-62 fleet-truth-wiring (Task 18)",
+ "trace": "1a12d2f00889b079",
+ "owner": "directive: תמשיך לשפר — join the agents, check what is not connected, dig the buried quality from under the layers, self-train and self-check without trusting claims, turn descriptions into sovereign autonomous action",
+ "artifacts": {
+  "claim": {
+   "repo": "FleetHQ",
+   "commit": "a699bd23",
+   "what": "lane claim fleet-truth-wiring (write-log 18 entries, pre-work, anti-collision checked)"
+  },
+  "shipped": {
+   "what": "certainty dashboard (local my-project): /api/fleet-truth route (server-side GitHub fetch of Domain/agents/grid-truth.json + FleetHQ receipts/office-3d/latest.json, PAT never leaves server, 2min memo, read-only source) + truth view (measured chain totals 3 chains/26 accounts + 10 real alerts incl. SP-UNDERFLOOR headcorner 2925.6<3000 + TREASURY-UNDERFLOOR 55.2<90 + office-3d bake chip linking the live room Domain/office3d/v2) + certainty.json +T-62 section (tally 60/3/2/2 recounted from file) + flow.json +edge+freshness (28 edges, 18 live, dashboard-edge honestly marked non-repo)"
+  },
+  "verifier": {
+   "script": "plan/verify-certainty.mjs",
+   "result": "+G24 fleet-truth wiring; full run 23 VERIFIED + 2 META + 1 REFUTED (G8 honest-RED = N1 GEN-1 rotation owner-pending), 0 PARTIAL; G15 flipped honest-RED→VERIFIED this run"
+  },
+  "n7Closure": {
+   "what": "N7 (domain-pulse frozen) closed BY MEASUREMENT: office-pulse-bot writes again (office/data.json age=8min, ALIVE 22:50:12Z), runtime lane shipped 40bb19dc hardening; G15 green in live run; zero cross-lane writes done by this lane"
+  },
+  "lanesJoined": "office-3d lane (bake chip joins, no duplication), grid-doctor lane (output surfaced read-only), runtime lane (N7 fix confirmed by measurement), opens-closer lane (G23 stays green)"
+ },
+ "measuredGapsFilled": "grid-doctor v2 output (19KB live-chain truth, zero self-reports) was buried in Domain/agents/ with NO product surface — now the user-facing truth screen serves it live; the buried treasury intelligence (underfloor alerts) is visible to the owner",
+ "honest": "canon FLEET-GRAPH.json untouched (26 nodes = 26 repos, G17 intact); dashboard edge recorded in flow.json only, explicitly marked non-repo; grid-truth source read-only; G8 kept honest-RED (owner N1); no secrets anywhere"
+}
