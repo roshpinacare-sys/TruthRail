@@ -1,0 +1,69 @@
+{
+  "schema": "saos.truthrail.receipt/1",
+  "wave": "T-58 revival — the 3 queued edges become real",
+  "at": "2026-10-11T20:56:16.889Z",
+  "trace": "1a12ca31ebbe33f1",
+  "ownerLaws": [
+    "release-not-archive",
+    "one-unit",
+    "everything-uses-everything",
+    "fix-dont-flee"
+  ],
+  "laneClaimsBeforeWork": "FleetHQ write-log 9618fd3 (3 revival lanes) + f2e7091c (saos-runtime A2 fix lane) — law #2 enforced on own author",
+  "artifacts": {
+    "Sdk": {
+      "commits": [
+        "8bac972b",
+        "2e78f54f"
+      ],
+      "what": "sdk/ @saos/fleet-sdk — keyless readers (office/graph/write-log/pnl-desk/receipts/anchor) + independent verifyAnchor + merkle port + fallback chain raw→jsDelivr→API + sdk-live dispatch-ready workflow",
+      "proof": "selftest from HEAD files: passes=21 fails=0 live=6/6 anchor=VERIFIED (G18)"
+    },
+    "saos_jummper": {
+      "commits": [
+        "d7553580",
+        "022eec59"
+      ],
+      "what": "scripts/truthrail_anchor.py (stdlib-only, keyless, fail-open-honest) + state record + truthrail-anchor.yml dispatch-ready",
+      "proof": "G19: triple-port merkle agreement PY≡JS≡verifier, root d841499f, 2/2 proofs, bytes spot-check"
+    },
+    "TruthRail": {
+      "commits": [
+        "7e922f33"
+      ],
+      "what": "anchors/truthrail-anchor-latest.json — the PUBLIC verification surface (notary repo is private; keyless verification must live on the public rail)",
+      "proof": "16 receipts anchored, root=d841499f, verified independently by fleet SDK + verifier"
+    },
+    "roshpina": {
+      "commits": [
+        "3f887102"
+      ],
+      "what": "fee-engine/state.json + REVIVAL.md — armed snapshot lane (pnl-desk doctrine), measured inventory",
+      "proof": "G20: inventory matches live tree (kernel 114=114, apiRoutes 12=12); armed→live = host decision only"
+    },
+    "saos_runtime": {
+      "commits": [
+        "844741f9"
+      ],
+      "what": "A2 regression fix: commit-back honest-yield — conflict on machine-state = proof custodian ALIVE; runner yields (no force, ever); 5 retries for clean races",
+      "proof": "root cause from step logs (6 CONFLICT files, run 38171555756); logic sim-verified on a real rebase conflict (SIM PASS: custodian record intact)"
+    },
+    "FleetHQ": {
+      "commits": [
+        "9618fd3",
+        "f2e7091c",
+        "a09512f0",
+        "f887afd7"
+      ],
+      "what": "write-log claims + receipts; FLEET-GRAPH updated: 14 live / 10 policy / 1 armed / 0 queued",
+      "proof": "blob-verified at HEAD"
+    }
+  },
+  "verifier": "19 VERIFIED + 1 PARTIAL (G7 pre-fix) + 2 META · 0 REFUTED — verify-certainty.mjs G18-G20 added (wave T-58)",
+  "honestIncidents": [
+    "raw CDN propagation lag + private-repo impossibility measured → became the SDK keyless fallback chain (raw→jsDelivr→API)",
+    "first simulated test was a FALSE PASS (branch-name mixup) — caught, redone with assertions on a real conflict (M1 pays again)",
+    "unauth GitHub API rate-limit produced an honest RED anchor digest before the authenticated-relisting production (recorded in artifact producedBy)"
+  ],
+  "noSecrets": true
+}
