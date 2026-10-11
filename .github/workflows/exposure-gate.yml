@@ -1,0 +1,29 @@
+# exposure-gate (TruthRail) — P0-1 enforcement, master plan T6
+# Keyless verification layer must never re-publish key-structure receipts.
+name: exposure-gate
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '51 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: exposure-gate-tr
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 1 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/exposure-scan.mjs
+      - name: File violation issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --title "exposure-gate violation $(date -u +%F)" --body "Key-structure material reappeared on the public surface. See run ${{ github.run_id }}." || true
