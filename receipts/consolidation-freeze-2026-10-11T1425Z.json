@@ -1,0 +1,25 @@
+{
+  "kind": "fleet-consolidation-freeze",
+  "protocol": "SAOS-CONSOLIDATION/1",
+  "at": "2026-10-11T14:25:00Z",
+  "authority": "MASTER-PLAN-2026-10-11.md §4 (9-canonical law, 17-to-archive) · owner approval 2026-10-11 ('אישור להכל' — approve everything) · chaos-map census task 5-e (worklog.md)",
+  "actor": "main orchestrator agent (Z.ai Code), session trace 1a12b58a91bffd5d",
+  "method": "GitHub REST PATCH /repos {archived:true} — settings-level freeze, fully reversible by owner; no git history touched; no content deleted",
+  "archived": [
+    { "repo": "Sdk", "since": "2026-10-08", "why": "dead private · 84/84 md identical to anchor-baseline corpus (triplicate docs)" },
+    { "repo": "Project-files", "since": "2026-10-08", "why": "dead private · 85 md shared with anchor-baseline + PF=zip snapshots duplicates" },
+    { "repo": "anchor-baseline", "since": "2026-10-07", "why": "dead private · corpus canon stays readable read-only; living corpus work continues in steem" },
+    { "repo": "Defi", "since": "2026-10-08", "why": "dead private · DOCTRINE-only docs, merged plan target steem" },
+    { "repo": "roshpina", "since": "2026-10-08", "why": "dead private · second 'chosen project' kernel, contradicted by law-recognized canon (steem)" },
+    { "repo": "saos-sovereign-platform", "since": "2026-10-08", "why": "dead private · selftest theater (frozen 10-08); DEX code in 3 repos resolved to saos-dex" },
+    { "repo": "saos-sovereign-foundry", "since": "2026-10-08", "why": "dead private · FAIL unanswered; zero .sol contracts; broadcasts/ = markdown announcements" }
+  ],
+  "held_back": [
+    { "repo": "Saosmartwallet", "why": "LIVE — zai-code-3 hardening in progress today (gitleaks, wallet-verify verdict law, GATE_COOKIE_SECURE)" },
+    { "repo": "saos-agents", "why": "canonical tooling per 5-e canon list (+ push observed after 10-08)" },
+    { "repo": "Adsmarket", "why": "history-rewrite + vault purge pending owner-coordinated D-ROT wave" },
+    { "repo": "Sandbox/sanbox/Zip/sovereign-lighthouse/SovereignConsole", "why": "active or owner-decision pending (renames, redundancy, diet)" }
+  ],
+  "remaining_count": { "total_before": 26, "archived_now": 7, "active_now": 19 },
+  "verification": "PATCH responses HTTP 200 with archived=true, 2026-10-11T14:2xZ"
+}
