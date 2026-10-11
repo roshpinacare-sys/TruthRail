@@ -1,0 +1,43 @@
+{
+ "ts": "2026-10-11T22:20:02.974Z",
+ "wave": "T-60 product-activation (Task 16)",
+ "trace": "1a12cf9cd160fac9",
+ "owner": "directive: join the other agents, connect what is not connected, use the buried quality content, reach product-delivery level; verified, no forgeries",
+ "artifacts": {
+  "claim": {
+   "repo": "FleetHQ",
+   "commit": "d3b7d855",
+   "what": "lane claim product-activation (write-log, pre-work)"
+  },
+  "shipped": {
+   "repo": "Domain",
+   "commit": "a4e2aa25",
+   "base": "e1b10a32",
+   "files": [
+    "marketing/index.html",
+    "marketing/products.json"
+   ],
+   "what": "the public product offer page: 5 products, receipts wall (STEEM/HIVE/ETH/SOL/BLURT), cross-chain check, live keyless strip, 60s verification doctrine"
+  },
+  "activation": {
+   "repo": "FleetHQ",
+   "commit": "4c409568",
+   "base": "9689ff32",
+   "what": "FLEET-GRAPH edge Adsmarket→Domain policy→live (live=17/policy=9) + write-log receipt (15 entries)"
+  },
+  "canon": {
+   "repo": "Adsmarket",
+   "what": "untouched — static-by-design role respected (README role declaration + claims-guard.yml + exactly 3 workflows at HEAD)"
+  },
+  "verifier": {
+   "script": "plan/verify-certainty.mjs",
+   "result": "G22 product level; full run 22 VERIFIED + 2 META, 0 PARTIAL, 0 REFUTED; A2 (G7) commit-back green 4 consecutive runs"
+  },
+  "guard": {
+   "script": "plan/guard-t60.mjs (local claims-guard replica)",
+   "verdict": "PASS: 0 forbidden glyphs, 0 own-network dead links, 12 links checked, 10 receipt mentions, 3 external bot-blocks reported (etherscan 403, steemworld 404, hiveblocks 502 — tolerated per canon policy)"
+  }
+ },
+ "measuredGapsFilled": "value-scan opportunity scan-policy-Adsmarket-Domain (\"can live now\") → activated the same day; office-state staleness (148min) + error agents aluf/gal (t1083) surfaced honestly — owned by the office retro lane (zai-11d/fleet-office-bot), not touched",
+ "honest": "first guard run FAILED on 2 guard artifacts (JS concat prefix + pending-publish URL) — aligned with canon semantics, re-run PASS; no data faked, externals reported not hidden"
+}
