@@ -1,0 +1,64 @@
+{
+ "ts": "2026-10-11T22:45:55.738Z",
+ "wave": "T-61 opens-closing (Task 17)",
+ "trace": "1a12d105f3fb9fc9",
+ "owner": "directive: handle everything that is open",
+ "artifacts": {
+  "claim": {
+   "repo": "FleetHQ",
+   "commit": "f4877312",
+   "what": "lane claim opens-closing (write-log, pre-work)"
+  },
+  "rootCauses": [
+   "GitHub drops scheduled runs: beacon silent since 19:27Z, office-heartbeat since 19:34Z, while value-scan fired (measured)",
+   "explorers genuinely dead: steemworld 404 + hiveblocks 500 browser-verified",
+   "Domain pulse writer is the runtime runner (office-pulse-bot), frozen since 19:36Z while runtime heartbeat green — NOT a GitHub workflow"
+  ],
+  "shipped": [
+   {
+    "repo": "FleetHQ",
+    "commit": "51e6fe7c",
+    "what": "opens-closer self-healing dispatcher: keyless freshness every 30min (office-state/beacon/lighthouse/domain-pulse), same-repo revival dispatch, honest cross-repo owner-action record, no-noise commit law"
+   },
+   {
+    "repo": "FleetHQ",
+    "commit": "05ecb91a",
+    "what": "env fix: GITHUB_TOKEN mapped into the tool step (first run measured no-token, honest)"
+   },
+   {
+    "repo": "FleetHQ",
+    "commit": "b3b0af0b",
+    "what": "+domain-pulse watch (N7 record, zero cross-lane writes)"
+   },
+   {
+    "repo": "Domain",
+    "commit": "dcf420aa",
+    "what": "receipts wall explorer links swapped to browser-verified live: steemscan (tx 390bcfc2 + block 10,937,394) + hive.ausbit.dev (Included in Block 109,708,562); guard PASS"
+   }
+  ],
+  "revived": {
+   "beacon": "state 8min post-dispatch (run success)",
+   "lighthouse": "state 8min post-dispatch (run success)",
+   "office": "full shift ran, state fresh, aluf writing-summary, memory persisted to Domain 3b388b24"
+  },
+  "verifier": {
+   "script": "plan/verify-certainty.mjs",
+   "result": "G23 added; 22 VERIFIED + 2 META; G15 kept honest-RED (N7); M1 catch #5: verifier own bugs (stale steemworld marker + raw CDN lag + wrong tsKey) refuted correct artifacts — double-pass corrected"
+  },
+  "honest": "GITHUB_TOKEN env mapping missing in first ship — caught by its own first-run ledger (no GITHUB_TOKEN — not faked), fixed and re-dispatched; t1083 stays blocked (office retro lane); OFFICE_GIT_PAT not repurposed"
+ },
+ "ownerActions": {
+  "closed": [
+   "A2 — commit-back green 4+ consecutive runs (G7)"
+  ],
+  "open": [
+   "N1 GEN-2 rotation",
+   "N2 D-023 escrow",
+   "N3 T2 params",
+   "N4 sanbox rename",
+   "N5 roshpina hosting",
+   "N6 cross-repo revival credential",
+   "N7 runtime pulse-writer regression"
+  ]
+ }
+}
