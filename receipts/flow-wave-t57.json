@@ -1,0 +1,62 @@
+{
+  "receipt": "T-57 flow wave — everything uses everything (owner trace 1a12c8edcc32d7bd)",
+  "ts": "2026-10-11T20:17:10.533Z",
+  "agent": "zai-code (certainty lane)",
+  "artifacts": {
+    "fleetGraph": {
+      "repo": "FleetHQ",
+      "path": "GOVERNANCE/FLEET-GRAPH.json",
+      "commit": "a19962d6b9954559cd15bda7303e4d8a73a436a3",
+      "base": "56c8d71372adeb4367c8be3d9f6e683851d82454",
+      "stats": "26 nodes, 25 edges (12 live / 10 policy / 3 queued), freshness SLAs, economics pipeline, revival queue"
+    },
+    "writeLogSelfReceipt": {
+      "repo": "FleetHQ",
+      "commit": "bdf4d9ebc09240f4eb8544075c028d95a198c93f",
+      "law": "INTER-AGENT-WRITE-LOG #4 — the law binds its own author"
+    },
+    "verifier": {
+      "script": "plan/verify-certainty.mjs",
+      "result": "17/17 VERIFIED + 2 META, 0 REFUTED, 0 PARTIAL",
+      "newChecks": [
+        "G14 graph canon",
+        "G15 freshness SLA measured live",
+        "G16 economics engine + live verdict",
+        "G17 zero orphans/ghosts (26 repos == 26 nodes)"
+      ]
+    },
+    "dashboard": {
+      "files": [
+        "src/data/flow.json",
+        "src/data/certainty.json",
+        "src/app/page.tsx"
+      ],
+      "view": "זרימה — freshness cards, edges grouped, economics, revival queue; mobile HSCROLL fixed (TabsList flex-wrap)"
+    }
+  },
+  "measuredLive": {
+    "at": "2026-10-11T20:06Z",
+    "edgesLive": 12,
+    "stale": 0,
+    "reposActive24h": "26/26",
+    "surfaces": "office/data.json 30min, heartbeat 32min, 4 Pages 200, receipts 35min, saos-cockpit 4min, pnl-desk 232min — all within SLA"
+  },
+  "economics": {
+    "engine": "saos-dex T2+D-023",
+    "verdict": "EDGE-NEGATIVE-GRID-HOLD",
+    "next": [
+      "N2 D-023 escrow >=1 SBD (edge +40.8% measured)",
+      "N3 T2 hardening",
+      "roshpina fee-engine revival",
+      "saos-jummper notary",
+      "Sdk unified SDK"
+    ]
+  },
+  "laws": [
+    "release-not-archive",
+    "one unit (מקשה אחת)",
+    "everything uses everything",
+    "M1 double-pass verification",
+    "write-log before write, FF-only"
+  ]
+}
