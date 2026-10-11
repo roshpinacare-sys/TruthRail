@@ -1,0 +1,37 @@
+{
+  "kind": "sovereignty-decision-audit",
+  "protocol": "SAOS-AUDIT/1",
+  "at": "2026-10-11T16:33:26Z",
+  "authority": "owner directive 2026-10-11 (trace 1a12bcc3f13107ad): foundry ALIVE ('הוא חי מחדש') + standing law: every sovereignty decision re-audited for engineering + validation efficiency",
+  "actor": "main orchestrator agent (Z.ai Code), session web-4ee2a60c",
+  "owner_decision": {
+    "decision": "saos-sovereign-foundry is ALIVE — consolidation classification 'dead' corrected by owner",
+    "effect": "active repos = 18 (26 total − 8 archived); consolidation receipt 9ef951a line for foundry superseded",
+    "evidence": "live API archived=false; P0 fixes by zai-fix in HEAD (34d1d2a5 argv-array exec, 45908148 loopback-bind); pushed_at 15:43:16 after 14:42:59 archive receipt"
+  },
+  "standing_law": [
+    "every sovereignty decision gets periodic re-audit: engineering (still optimal?) + validation (what was measured live?)",
+    "no ruling on stale activity data while parallel agents hold active lanes",
+    "every repo state change (archive/unarchive/visibility) = mandatory TruthRail receipt",
+    "verdict classes: SOUND / SOUND-WITH-CAVEATS / QUESTIONABLE / NEEDS-EXECUTION / CORRECTED-BY-OWNER with mandatory optimization proposals for non-SOUND"
+  ],
+  "audit_summary": {
+    "decisions_audited": 9,
+    "verdicts": {
+      "SOUND": 3,
+      "SOUND-WITH-CAVEATS": 2,
+      "SOUND-AS-INTERIM": 1,
+      "QUESTIONABLE-PARAMS": 1,
+      "NEEDS-EXECUTION": 1,
+      "CORRECTED-BY-OWNER": 1
+    },
+    "top_priorities": [
+      "D8 GEN-2 custody rotation (needs-execution)",
+      "D3 T2 governor params: min-sample gate + resume-hysteresis 1.2% + mirror-unavailable→HOLD (fail-closed)",
+      "D1 archive observation-window + cross-agent lock (foundry lesson)",
+      "D2 PERSONAS_KEY escrow to custody shell"
+    ],
+    "full_audit": "orchestrator worklog Task 11 + plan/DECISION-AUDIT-2026-10-11.md"
+  },
+  "verification": "all verdicts evidence-linked to live GitHub API checks (certainty-results.json, verify-certainty.mjs double-pass)"
+}
