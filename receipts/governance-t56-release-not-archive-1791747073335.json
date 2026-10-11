@@ -1,0 +1,58 @@
+{
+  "receipt": "governance-t56-release-not-archive",
+  "at": "2026-10-11T19:31:12.013Z",
+  "ownerTrace": "1a12c57bccbf89bd",
+  "ownerLaws": [
+    "release-not-archive: muted folders are not escape material — fix interference, assign roles, keep all 26 in constant useful use",
+    "parallel-agent safety: no agent may overwrite another — mandatory inter-agent write log",
+    "standing: every sovereignty decision is perpetually re-examined (why / efficiency / value / engineering / validation)"
+  ],
+  "liveState": {
+    "measuredAt": "2026-10-11T19:10Z",
+    "repos": 26,
+    "active": 26,
+    "archived": 0,
+    "note": "all historical mutes (Sdk, Project-files, anchor-baseline, Defi, roshpina, saos-sovereign-platform, SovereignConsole, FleetHQ, foundry) verified released via live API; NOT re-executed (no duplication)"
+  },
+  "receipts": {
+    "A3_interAgentWriteLog": {
+      "repo": "FleetHQ",
+      "commits": [
+        "56c4daa",
+        "e779744"
+      ],
+      "files": [
+        "GOVERNANCE/INTER-AGENT-WRITE-LOG.md",
+        "GOVERNANCE/FLEET-ROLES.md",
+        "GOVERNANCE/write-log.jsonl"
+      ],
+      "note": "law + fleet roles/dedupe map + seeded log with self-receipt; observation-window law encoded"
+    },
+    "A2_heartbeatFF": {
+      "repo": "saos-runtime",
+      "evidence": "run 38166685949 job heartbeat 13/13 steps success incl. \"Commit state back (FF-only, no force, ever)\" — the step that failed every prior run; resolved by parallel agent (head dcccb87..96e297b), verified independently by zai-code"
+    },
+    "Domain_officeFirst": {
+      "repo": "Domain",
+      "commits": {
+        "artifact": "0df7766 (+2 empty lines, caught by blob-level verify — M1 in action)",
+        "fixed": "589bae6"
+      },
+      "content": "office-first hero + live fleet pulse (GitHub API, 5-min cache, honest fallback); Fleet HQ promoted to front page; CTA → FleetHQ Pages",
+      "verified": "blob@commit: office-first YES, fleet-pulse YES, position after #bg YES"
+    }
+  },
+  "corrections": {
+    "D1": "CORRECTED-BY-OWNER — archive ruling superseded by release-not-archive; roles map assigns every repo a live canon; duplicates get merge/repurpose plans, not locks"
+  },
+  "economics": {
+    "next": "D-023 convert awaits escrow ≥1 SBD (measured edge +40.8% on the lane)",
+    "proposal": "T2 gate hardening: min-sample ≥20 fills, resume 1.2% vs hold 1.0%, mirror-unavailable → HOLD fail-closed",
+    "revivalQueue": [
+      "roshpina fee-engine",
+      "saos-jummper notary for TruthRail receipts",
+      "Sdk unified agent SDK"
+    ]
+  },
+  "secrets": "none — this receipt contains zero secret material"
+}
