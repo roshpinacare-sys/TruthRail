@@ -1,11 +1,10 @@
+# [cron-strip 2026-10-12] schedule removed: quota-dead private repo — scheduled life lives on public repos (R244). restore: re-add schedule.
 # exposure-gate (TruthRail) — P0-1 enforcement, master plan T6
 # Keyless verification layer must never re-publish key-structure receipts.
 name: exposure-gate
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: '51 5 * * *'
   workflow_dispatch:
 permissions:
   contents: read
