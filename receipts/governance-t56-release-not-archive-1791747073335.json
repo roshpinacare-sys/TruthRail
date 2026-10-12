@@ -1,7 +1,7 @@
 {
   "receipt": "governance-t56-release-not-archive",
   "at": "2026-10-11T19:31:12.013Z",
-  "ownerTrace": "1a12c57bccbf89bd",
+  "ownerTrace": "1a12…89bd",
   "ownerLaws": [
     "release-not-archive: muted folders are not escape material — fix interference, assign roles, keep all 26 in constant useful use",
     "parallel-agent safety: no agent may overwrite another — mandatory inter-agent write log",

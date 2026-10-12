@@ -2,8 +2,8 @@
   "kind": "fleet-consolidation-freeze",
   "protocol": "SAOS-CONSOLIDATION/1",
   "at": "2026-10-11T14:25:00Z",
-  "authority": "MASTER-PLAN-2026-10-11.md §4 (9-canonical law, 17-to-archive) · owner approval 2026-10-11 ('אישור להכל' — approve everything) · chaos-map census task 5-e (worklog.md)",
-  "actor": "main orchestrator agent (Z.ai Code), session trace 1a12b58a91bffd5d",
+  "authority": "MASTER-PLAN-2026-10-11.md §4 (9-canonical law, 17-to-archive) · owner approval 2026-10-11 ('[owner-directive]' — approve everything) · chaos-map census task 5-e (worklog.md)",
+  "actor": "main orchestrator agent (Z.ai Code), session trace 1a12…fd5d",
   "method": "GitHub REST PATCH /repos {archived:true} — settings-level freeze, fully reversible by owner; no git history touched; no content deleted",
   "archived": [
     { "repo": "Sdk", "since": "2026-10-08", "why": "dead private · 84/84 md identical to anchor-baseline corpus (triplicate docs)" },

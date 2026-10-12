@@ -2,7 +2,7 @@
   "kind": "sovereignty-decision-audit",
   "protocol": "SAOS-AUDIT/1",
   "at": "2026-10-11T16:33:26Z",
-  "authority": "owner directive 2026-10-11 (trace 1a12bcc3f13107ad): foundry ALIVE ('הוא חי מחדש') + standing law: every sovereignty decision re-audited for engineering + validation efficiency",
+  "authority": "owner directive 2026-10-11 (trace 1a12…07ad): foundry ALIVE ('[owner-directive]') + standing law: every sovereignty decision re-audited for engineering + validation efficiency",
   "actor": "main orchestrator agent (Z.ai Code), session web-4ee2a60c",
   "owner_decision": {
     "decision": "saos-sovereign-foundry is ALIVE — consolidation classification 'dead' corrected by owner",

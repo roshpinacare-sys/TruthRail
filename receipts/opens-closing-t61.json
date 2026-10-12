@@ -1,8 +1,8 @@
 {
  "ts": "2026-10-11T22:45:55.738Z",
  "wave": "T-61 opens-closing (Task 17)",
- "trace": "1a12d105f3fb9fc9",
- "owner": "directive: handle everything that is open",
+ "trace": "1a12…9fc9",
+ "owner": "[owner-directive]",
  "artifacts": {
   "claim": {
    "repo": "FleetHQ",

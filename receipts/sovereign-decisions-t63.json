@@ -1,8 +1,8 @@
 {
  "ts": "2026-10-12T00:46:15.293Z",
  "wave": "T-63 הריבונות מחליטה (Task 19)",
- "trace": "1a12d4ae2964f45d",
- "owner": "directive: הריבונות היא הבעלים — וודא הכל, תמשיך; הרעיון המרכזי שהיא מקבלת החלטות חכמות ואינטיליגנטיות בצורה הכי מתקדמת שיש; הפניה אליו = שלילת רעיון הריבונות; פתור בעזרת הריבונות האוטונומית הכל",
+ "trace": "1a12…f45d",
+ "owner": "[owner-directive]",
  "artifacts": {
   "claim": {
    "repo": "FleetHQ",
@@ -34,7 +34,7 @@
    "closes": "N3"
   },
   "d6": {
-   "what": "D-023 escrow APPROVED + mandate routed to the saos-dex convert lane (STASIS full-lift 1a12d295c7da9241): SBD 91.195 measured ≥ 1, STEEM floor untouched, guards ≤1 SBD + chain receipt + floor re-measure",
+   "what": "D-023 escrow APPROVED + mandate routed to the saos-dex convert lane (STASIS full-lift 1a12…9241): SBD 91.195 measured ≥ 1, STEEM floor untouched, guards ≤1 SBD + chain receipt + floor re-measure",
    "closes": "N2 (armed-conditional → lane mandate)"
   },
   "dashboard": {
