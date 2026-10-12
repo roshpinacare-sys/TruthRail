@@ -10,7 +10,7 @@
    "what": "lane claim fleet-truth-wiring (write-log 18 entries, pre-work, anti-collision checked)"
   },
   "shipped": {
-   "what": "certainty dashboard (local my-project): /api/fleet-truth route (server-side GitHub fetch of Domain/agents/grid-truth.json + FleetHQ receipts/office-3d/latest.json, PAT never leaves server, 2min memo, read-only source) + truth view (measured chain totals 3 chains/26 accounts + 10 real alerts incl. SP-UNDERFLOOR headcorner 2925.6<3000 + TREASURY-UNDERFLOOR 55.2<90 + office-3d bake chip linking the live room Domain/office3d/v2) + certainty.json +T-62 section (tally 60/3/2/2 recounted from file) + flow.json +edge+freshness (28 edges, 18 live, dashboard-edge honestly marked non-repo)"
+   "what": "certainty dashboard (local my-project): /api/fleet-truth route (server-side GitHub fetch of Domain/agents/grid-truth.json + FleetHQ receipts/office-3d/latest.json, PAT never leaves server, 2min memo, read-only source) + truth view (measured chain totals 3 chains/26 accounts + 10 real alerts incl. SP-UNDERFLOOR acct-00 2925.6<3000 + TREASURY-UNDERFLOOR 55.2<90 + office-3d bake chip linking the live room Domain/office3d/v2) + certainty.json +T-62 section (tally 60/3/2/2 recounted from file) + flow.json +edge+freshness (28 edges, 18 live, dashboard-edge honestly marked non-repo)"
   },
   "verifier": {
    "script": "plan/verify-certainty.mjs",

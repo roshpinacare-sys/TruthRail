@@ -2,7 +2,7 @@
  "at": "2026-10-08T16:40:33.467Z",
  "rows": [
   {
-   "user": "headcorner",
+   "user": "acct-00",
    "steem": {
     "steem": "0.619 STEEM",
     "sbd": "0.716 SBD",
@@ -16,7 +16,7 @@
    "blurt": null
   },
   {
-   "user": "hcsoldier4",
+   "user": "acct-11",
    "steem": {
     "steem": "1.000 STEEM",
     "sbd": "0.000 SBD",
@@ -26,7 +26,7 @@
    "blurt": null
   },
   {
-   "user": "hcsoldier5",
+   "user": "acct-12",
    "steem": {
     "steem": "0.200 STEEM",
     "sbd": "0.080 SBD",
@@ -36,7 +36,7 @@
    "blurt": null
   },
   {
-   "user": "hcsoldier6",
+   "user": "acct-13",
    "steem": {
     "steem": "1.000 STEEM",
     "sbd": "0.000 SBD",
@@ -46,7 +46,7 @@
    "blurt": null
   },
   {
-   "user": "cashmachine",
+   "user": "acct-01",
    "steem": {
     "steem": "0.010 STEEM",
     "sbd": "0.125 SBD",
@@ -60,7 +60,7 @@
    "blurt": null
   },
   {
-   "user": "haran",
+   "user": "acct-02",
    "steem": {
     "steem": "0.010 STEEM",
     "sbd": "0.120 SBD",
@@ -74,7 +74,7 @@
    "blurt": null
   },
   {
-   "user": "israelnews",
+   "user": "acct-03",
    "steem": {
     "steem": "0.012 STEEM",
     "sbd": "0.120 SBD",
@@ -88,7 +88,7 @@
    "blurt": null
   },
   {
-   "user": "lsa",
+   "user": "acct-04",
    "steem": {
     "steem": "0.010 STEEM",
     "sbd": "0.120 SBD",
@@ -102,7 +102,7 @@
    "blurt": null
   },
   {
-   "user": "macrame",
+   "user": "acct-05",
    "steem": {
     "steem": "0.010 STEEM",
     "sbd": "0.120 SBD",
@@ -116,7 +116,7 @@
    "blurt": null
   },
   {
-   "user": "siq",
+   "user": "acct-06",
    "steem": {
     "steem": "0.010 STEEM",
     "sbd": "0.120 SBD",
@@ -130,7 +130,7 @@
    "blurt": null
   },
   {
-   "user": "tov",
+   "user": "acct-07",
    "steem": {
     "steem": "0.209 STEEM",
     "sbd": "0.145 SBD",
@@ -144,7 +144,7 @@
    "blurt": null
   },
   {
-   "user": "wic",
+   "user": "acct-08",
    "steem": {
     "steem": "0.010 STEEM",
     "sbd": "0.100 SBD",
@@ -158,7 +158,7 @@
    "blurt": null
   },
   {
-   "user": "wog",
+   "user": "acct-09",
    "steem": {
     "steem": "0.010 STEEM",
     "sbd": "0.100 SBD",
@@ -172,7 +172,7 @@
    "blurt": null
   },
   {
-   "user": "woq",
+   "user": "acct-10",
    "steem": {
     "steem": "0.010 STEEM",
     "sbd": "0.100 SBD",
@@ -186,7 +186,7 @@
    "blurt": null
   },
   {
-   "user": "ynet",
+   "user": "acct-19",
    "steem": {
     "steem": "0.060 STEEM",
     "sbd": "0.041 SBD",

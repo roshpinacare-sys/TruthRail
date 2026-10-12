@@ -75,7 +75,7 @@ heights are the public commitments and are published as-is.
   :33 cycle — the cadence no longer depends on the scheduler. Public minutes = free forever.
 - **Key-split honesty**: the R245-ROT2 vault rotation (2026-10-07 19:08Z) was never broadcast to
   the chain (0/11 vault keys match live authorities); the LIVE pre-rotation keys verified 10/10.
-  headcorner's own STEEM keys exist in no cloud vault (0/4 across all generations) — operator/
+  acct-00's own STEEM keys exist in no cloud vault (0/4 across all generations) — operator/
   twin custody only, recorded as an honest QUEUE, not hidden.
 
 ## Laws encoded here
