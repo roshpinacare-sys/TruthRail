@@ -1,0 +1,53 @@
+{
+ "ts": "2026-10-12T00:46:15.293Z",
+ "wave": "T-63 הריבונות מחליטה (Task 19)",
+ "trace": "1a12d4ae2964f45d",
+ "owner": "directive: הריבונות היא הבעלים — וודא הכל, תמשיך; הרעיון המרכזי שהיא מקבלת החלטות חכמות ואינטיליגנטיות בצורה הכי מתקדמת שיש; הפניה אליו = שלילת רעיון הריבונות; פתור בעזרת הריבונות האוטונומית הכל",
+ "artifacts": {
+  "claim": {
+   "repo": "FleetHQ",
+   "commit": "440e40f3",
+   "what": "lane claim sovereign-decisions (write-log 20 entries, anti-collision checked)"
+  },
+  "decisionsLedger": {
+   "commit": "31841db2",
+   "what": "office/state/sovereign-decisions.json first publish (D1-D6 executed/armed with measured evidence + authority envelope + ownerActionsRemaining=[]) + tools/sovereign-decider.mjs (SOV-POLICY/1: sense→decide→act→verify→record) + sovereign-decider.yml (cron 13,43)"
+  },
+  "d1": {
+   "what": "CROSS_REVIVE_PAT set via libsodium sealed box (name-only attestation), opens-closer wired for cross-repo revival (7a7ccc71), drills 204×3 (beacon+lighthouse+closer)",
+   "closes": "N6"
+  },
+  "d2": {
+   "what": "rename sanbox→sandbox-private (PATCH 200, redirect 301 verified, README receipt 5fb059a2, graph+roles 3e673654, G17 ghosts=NONE)",
+   "closes": "N4"
+  },
+  "d3": {
+   "what": "GEN-2 custody rotation EXECUTED BY THE RUNNER (gen2-rotation.yml, run 38187049062 SUCCESS): active zip+backup re-sealed (inner sha byte-identical, roundtrip verified), bundle merged gen1+recovery-3+gen2 (gen1 preserved — seed era), secrets PUT on steem+saos-runtime, recovery-meta v3 + GEN-2-ERA-META (lengths only, 4 boundaries honest)",
+   "closes": "N1"
+  },
+  "d4": {
+   "what": "roshpina hosting decided+executed: local kernel-smoke GREEN 7/7 (אין טענות, יש הוכחות); roshpina-own Actions wall MEASURED (38187350674 + controls-audit 38187704256 die in seconds, zero steps, last green 10-06); lane rerouted to the saos-runtime runner (fee-engine.yml b7596e9b18, first run 38187803398 SUCCESS, state=live, cron 23 */4); walled yml removed 1011dd3bb3; graph armed→live 818e6f03",
+   "closes": "N5"
+  },
+  "d5": {
+   "what": "T2 params ratified with proof (validate-params OK exit 0 + params-selftest 20/20 + sample 72/61 fills ≥20) + governor hysteresis codified (resume 1.2% / hold 1.0% / mirror-missing→HOLD fail-closed) into the decisions ledger for the lane protocol",
+   "closes": "N3"
+  },
+  "d6": {
+   "what": "D-023 escrow APPROVED + mandate routed to the saos-dex convert lane (STASIS full-lift 1a12d295c7da9241): SBD 91.195 measured ≥ 1, STEEM floor untouched, guards ≤1 SBD + chain receipt + floor re-measure",
+   "closes": "N2 (armed-conditional → lane mandate)"
+  },
+  "dashboard": {
+   "what": "certainty dashboard: new \"הריבונות מחליטה\" tab (principle + authority + D-cards with measured evidence + era-closed note) + /api/sovereign-decisions (keyless, 2min memo) + certainty.json +T-63 (tally 63/3/2/2) + flow.json T-63"
+  },
+  "verifier": {
+   "script": "plan/verify-certainty.mjs",
+   "result": "G8 evolved (GEN-2 era: blob-route reads, v3+refs+ERA-META+secrets+GEN2-artifact), G20 evolved (armed→live expectation), +G25 decisions chain, +G26 execution proofs; FULL RUN: 26 VERIFIED + 2 META · 0 REFUTED · 0 PARTIAL — first fully-green run in fleet history; M1 catches honored: contents-API 404/rate-limit ×2 (→blob route), redirect-follow (→manual check), decider dropped era fields (→preserved, 9b017745)"
+  },
+  "extras": {
+   "what": "opens-closer now watches value-scan too (3c7feb96 — measured scheduler drop 176min vs SLA 90) + value-scan revived by dispatch"
+  }
+ },
+ "measuredGapsFilled": "the sovereignty stopped referring decisions upward: all six owner-action items (N1-N6) became executed/armed sovereign decisions with linked evidence; the standing decider organ keeps the loop running 24/7 (cron 13,43)",
+ "honest": "no secrets anywhere (values never printed/logged; secret names only); GEN-1-era archives stay decryptable by their era passes (documented boundary — passphrase rotation cannot re-protect published ciphertext); on-chain key-material rotation + PERSONAS_KEY escrow + D-023 on-chain execution = recorded as armed-conditional decisions routed to the owning lanes (D3b/D6), never faked; every push FF-only, claims-first, zero cross-lane stomps (custody lane R-VAULTPASS-1 credited and completed, dex lane 9-c credited, runtime lane credited)"
+}
