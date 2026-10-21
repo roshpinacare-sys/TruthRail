@@ -6,6 +6,8 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: "7 5 * * *"  # דופק-יומי-עצמאי (גל-116 W121) — השער-לא-תלוי-עוד-בפצמר-זר
 permissions:
   contents: read
   issues: write
